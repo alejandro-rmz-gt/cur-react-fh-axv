@@ -9,11 +9,12 @@ const arreglo = [1, 2, 3, 4, 5];
 
 // Operador spread ...
 
+// Clon del arreglo usando el operador spread {...}
 let arreglo2 = [...arreglo, 5];
 // arreglo.push( 5 );
 
-// Call back
-const arreglo3 = arreglo2.map(function (numero) {
+// Call Back
+const arreglo3 = arreglo2.map(function(numero) {
   return numero * 2;
 });
 
