@@ -21,7 +21,7 @@ console.log(
 // Imprimiendo el objeto como tabla
 console.table(person);
 
-// Haciendo un clon del objeto Persona
+// Haciendo un clon del objeto Persona usando los tres puntos {...}
 const person2 = { ...person };
 // Dandole un nuevo nombre al clon del objeto
 person2.nombre = "Pablo";
