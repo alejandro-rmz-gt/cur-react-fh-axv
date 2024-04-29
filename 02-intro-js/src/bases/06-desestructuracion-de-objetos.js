@@ -20,12 +20,21 @@ const useContexts = ({ nombre, edad, rango = "capitan" }) => {
   return {
     nombreClave: nombre,
     anios: edad,
+    lating: {
+      lat: 14.4545,
+      lng: -12.4545,
+    },
   };
 };
 
 // Llamada a la función useContexts con el objeto persona como argumento
 // La desestructuración del resultado para obtener las propiedades nombreClave y anios
-const { nombreClave, anios } = useContexts(persona);
+const {
+  nombreClave,
+  anios,
+  lating: { lat, lng },
+} = useContexts(persona);
 
 // Impresión del valor de la propiedad nombreClave
-console.log(nombreClave);
+console.log(nombreClave, anios);
+console.log(lat, lng);
