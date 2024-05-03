@@ -6,7 +6,7 @@ export const App = () => {
     return (
         <>
             <FirstApp />
-            <CounterApp contador={55}/>
+            <CounterApp />
         </>
     )
 }
