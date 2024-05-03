@@ -3,3 +3,34 @@ body{
     color: white;
     font-family: sans-serif;
 }
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    transition: all ease-in-out 200ms;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: lightgreen;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: lightgray;
+}

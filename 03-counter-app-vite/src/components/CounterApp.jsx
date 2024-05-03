@@ -4,8 +4,11 @@ import PropTypes from "prop-types";
 export const CounterApp = ({ contador }) => {
     return (
         <>
-            <h2>CounterApp</h2>
-            <strong>{contador}</strong>
+            <div className='container'>
+                <h2>CounterApp</h2>
+                <strong> {contador} </strong>
+                <button> + 1</button>
+            </div>
         </>
     )
 }
