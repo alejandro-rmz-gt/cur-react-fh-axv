@@ -1,6 +1,6 @@
 import React from 'react';
 import { FirstApp } from './FirstApp';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 export const App = ({title, subTitle}) => {
     return (
@@ -15,4 +15,9 @@ export const App = ({title, subTitle}) => {
 App.propTypes = {
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.number
+}
+
+App.defaultProps = {
+    title: 'Por defecto',
+    subTitle: 'Por defecto'
 }

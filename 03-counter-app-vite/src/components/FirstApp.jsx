@@ -1,8 +1,8 @@
 import React from 'react';
 
 const objeto = {
-    nombre: "Alejandro",
-    parrafo: "Esto es un parrafo"
+    nombre: 'Alejandro',
+    parrafo: 'Esto es un parrafo'
 }
 
 const getResult = (a, b) => {
