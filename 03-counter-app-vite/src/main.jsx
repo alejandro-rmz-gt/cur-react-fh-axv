@@ -5,6 +5,6 @@ import { App } from "./components/App"
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        <App />
+        <App title={"Este es el titulo"} subTitle={45}/>
     </React.StrictMode>
 );
