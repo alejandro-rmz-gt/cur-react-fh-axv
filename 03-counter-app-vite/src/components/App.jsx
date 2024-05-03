@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { FirstApp } from './FirstApp';
 
 export const App = () => {
     return (
-        <h1>Hola mundo desde App</h1>
+        <>
+            <h1>Layput</h1>
+            <FirstApp />
+        </>
     )
 }
