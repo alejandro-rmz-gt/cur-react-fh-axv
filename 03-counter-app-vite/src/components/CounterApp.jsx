@@ -12,8 +12,8 @@ export const CounterApp = () => {
     };
 
     {/* Funcion que se manda a llamar con el boton para recetear */ }
-    const handleRecet = () => {
-        setContador(0)
+    const handreDecrement = () => {
+        setContador(contador -1)
     }
 
     {/* Retorno del componente */ }
@@ -27,7 +27,7 @@ export const CounterApp = () => {
 
             <div className='containerButtons'>
                 <button onClick={handleAdd}>Aument</button>
-                <button onClick={handleRecet}> Recet </button>
+                <button onClick={handreDecrement}> Decrement </button>
             </div>
 
         </div>
