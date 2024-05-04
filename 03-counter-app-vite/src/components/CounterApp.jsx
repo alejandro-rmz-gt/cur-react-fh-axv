@@ -7,21 +7,25 @@ export const CounterApp = () => {
     const [contador, setContador] = useState(0);
 
     {/* Funcion que se manda a llamar con en boton para Aumentar */ }
+
     const handleAdd = () => {
         setContador(contador + 1);
     };
 
     {/* Funcion que se manda a llamar con el boton para Decrementar */ }
+
     const handreDecrement = () => {
         setContador(contador -1)
     }
 
     {/* Funcion que se manda a llamar para Receteat */}
+
     const handleRecet = () => {
         setContador(0)
     }
 
     {/* Retorno del componente */ }
+
     return (
 
         <div className='container'>
