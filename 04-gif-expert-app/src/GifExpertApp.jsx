@@ -4,12 +4,17 @@ import { useState } from "react";
 import { AgregarCategoria } from "./components/AgregarCategoria";
 
 // Componente padre
-export const GifExpertApp = (nuevaCategoria) => {
+export const GifExpertApp = () => {
     // lista de categorias
     const [categorias, setCategories] = useState(["One Punch", "Mob"]);
 
     // Funcion para agregar categoria
     const funcionAgregarCategoria = (nuevaCategoria) => {
+
+        // Validar que los valores ingresados sean distintos
+        if ( categorias.includes(nuevaCategoria)) return;
+
+        // Agrega una nueva categoria
         setCategories([nuevaCategoria, ...categorias]);
     }
 
@@ -26,8 +31,8 @@ export const GifExpertApp = (nuevaCategoria) => {
 
             {/* Listado de Gifs */}
             <ol>
-                {categorias.map(category => {
-                    return <li key={category}>{category}</li>
+                {categorias.map((categoria) => {
+                    return <li key={categoria}>{categoria}</li>
                 })}
             </ol>
             {/* Gif Item */}
