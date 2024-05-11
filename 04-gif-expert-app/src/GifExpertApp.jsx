@@ -7,7 +7,7 @@ import { GifGrid } from "./components/GifGrid";
 // Componente padre
 export const GifExpertApp = () => {
     // lista de categorias
-    const [categorias, setCategories] = useState(["One Punch", "Mob"]);
+    const [categorias, setCategories] = useState(["One Punch"]);
 
     // Funcion para agregar categoria
     const funcionAgregarCategoria = (nuevaCategoria) => {
