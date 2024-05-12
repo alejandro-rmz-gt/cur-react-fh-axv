@@ -1,6 +1,7 @@
+// Importacion de use state
 import { useState } from "react"
 
-// Componente
+// Componente para agregar una nueva categoria
 export const AgregarCategoria = ( { agregarNuevaCategoria } ) => {
 
     // Use State
@@ -29,7 +30,8 @@ export const AgregarCategoria = ( { agregarNuevaCategoria } ) => {
 
     return (
         <>
-            <form onSubmit={ alEnviar }>
+            {/* Retorna un fragmento que contiene el formulario */}
+            <form onSubmit={ alEnviar }> {/* Formulario que ejecuta la función alEnviar cuando se envía */}
                 <input
                     type="text"
                     placeholder="Buscar gifs"
