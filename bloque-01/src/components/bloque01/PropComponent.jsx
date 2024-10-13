@@ -14,3 +14,9 @@ PropComponent.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
 };
+
+// Propiedades de las props por defecto
+PropComponent.defaultProps = {
+  title: "Default Title",
+  subtitle: "Default Subtitle",
+};
