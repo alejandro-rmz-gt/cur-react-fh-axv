@@ -1,6 +1,7 @@
 import React from "react";
 import { FirstComponent } from "./bloque01/FirstComponent";
 import { PropComponent } from "./bloque01/PropComponent";
+import { HomeWorkOne } from "./bloque01/HomeWorkOne";
 
 export const App = () => {
   return (
@@ -20,6 +21,11 @@ export const App = () => {
       />
 
       <hr />
+
+      <HomeWorkOne
+        title="Tarea"
+        description="Realizar un contador de numero, que incremente un numero y tambien lo decremente"
+      />
     </>
   );
 };
