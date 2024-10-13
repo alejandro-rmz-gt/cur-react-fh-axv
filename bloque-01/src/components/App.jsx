@@ -1,20 +1,17 @@
 import React from "react";
+import { FirstComponent } from "./bloque01/FirstComponent";
 
-export const App = ({ title='valor null' }) => {
-  /* Espacio de funciones */
-  const holoMundo = () => {
-    return "hola mundo";
-  };
-
+export const App = () => {
   return (
     <>
-      <div className="container">
-        <h1>Bloque 01</h1>
+      <h1>Bloque 01</h1>
 
-        <p>{holoMundo()}</p>
+      <FirstComponent
+        title="Primer componente"
+        description="Descripcion del componente"
+      />
 
-        <p>{title}</p>
-      </div>
+      <hr />
     </>
   );
 };
