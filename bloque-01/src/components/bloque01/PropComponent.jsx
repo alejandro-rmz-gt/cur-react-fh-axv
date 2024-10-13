@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 export const PropComponent = ({ title, description }) => {
   return (
@@ -10,13 +10,13 @@ export const PropComponent = ({ title, description }) => {
   );
 };
 
-PropComponent.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-};
+// PropComponent.propTypes = {
+//   title: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+// };
 
 // Propiedades de las props por defecto
-PropComponent.defaultProps = {
-  title: "Default Title",
-  subtitle: "Default Subtitle",
-};
+// PropComponent.defaultProps = {
+//   title: "Default Title",
+//   subtitle: "Default Subtitle",
+// };
