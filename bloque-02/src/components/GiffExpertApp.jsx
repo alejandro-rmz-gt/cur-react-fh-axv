@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AddCategory } from "./AddCategory";
 
 export const GiffExpertApp = () => {
   // Use state para las categorias
@@ -16,9 +17,10 @@ export const GiffExpertApp = () => {
       <h1>Giph Expert App</h1>
 
       {/* Input */}
-      <button onClick={addCategory}>Agregar</button>
+      <AddCategory />
 
       {/* Listado de items (giphs) */}
+      <button onClick={addCategory}>Agregar</button>
       <ol>
         {categories.map((category) => {
           return <li key={category}>{category}</li>;
