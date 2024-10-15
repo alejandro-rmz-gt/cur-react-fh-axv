@@ -6,9 +6,11 @@ export const GiffExpertApp = () => {
   const [categories, setCategories] = useState(["One punch man", "MHA"]);
 
   // Funcion para agregar un nuevo elemento a las categorias
-  const addCategory = () => {
+  const addCategory = ( newCategory ) => {
     // Usando spread
-    setCategories(["Kaiyu 8", ...categories]);
+    // setCategories(["Kaiyu 8", ...categories]);
+    if (categories.includes(newCategory)) return;
+    setCategories([newCategory, ...categories]);
   };
 
   return (
@@ -17,7 +19,10 @@ export const GiffExpertApp = () => {
       <h1>Giph Expert App</h1>
 
       {/* Input */}
-      <AddCategory setCategories={setCategories} />
+      <AddCategory
+        // setCategories={setCategories}
+        onNewCategory={addCategory}
+      />
 
       {/* Listado de items (giphs) */}
       <ol>
