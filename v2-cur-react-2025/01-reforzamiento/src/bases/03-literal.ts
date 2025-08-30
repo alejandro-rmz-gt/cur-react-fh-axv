@@ -28,3 +28,4 @@ persona2.address.city = 'Diferente ciudad';
 
 console.log('persona 2:', persona2);
 
+
